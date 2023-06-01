@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="80dp"-->
+<!--        android:text="@string/app_name"-->
+<!--        android:textSize="40sp"-->
+<!--        android:background="#ffff99"-->
+<!--        android:gravity="center"/>-->
+
+    <TextView
+        android:id="@+id/calculateTV"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:textSize="30sp"
+        android:background="#EEEEEE"
+        android:gravity="end|bottom"/>
+
+    <TextView
+        android:id="@+id/resultTV"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:textSize="30sp"
+        android:background="#EEEEEE"
+        android:gravity="end|bottom"/>
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:rowCount="5"
+        android:columnCount="4">
+
+        <!-- 第一行 -->
+        <Button
+            android:id="@+id/btn_ac"
+            style="@style/operatorButton"
+            android:text="@string/ac"/>
+        <Button
+            android:id="@+id/btn_divide"
+            style="@style/operatorButton"
+            android:text="@string/divide"/>
+        <Button
+            android:id="@+id/btn_plus"
+            style="@style/operatorButton"
+            android:text="@string/plus"/>
+        <Button
+            android:id="@+id/btn_delete"
+            style="@style/operatorButton"
+            android:text="@string/delete"/>
+
+        <!-- 第二行 -->
+        <Button
+            android:id="@+id/btn_seven"
+            style="@style/calculatorButton"
+            android:text="@string/seven"/>
+        <Button
+            android:id="@+id/btn_eight"
+            style="@style/calculatorButton"
+            android:text="@string/eight"/>
+        <Button
+            android:id="@+id/btn_nine"
+            style="@style/calculatorButton"
+            android:text="@string/nine"/>
+        <Button
+            android:id="@+id/btn_percent"
+            style="@style/operatorButton"
+            android:text="@string/percent"/>
+
+        <!-- 第三行 -->
+        <Button
+            android:id="@+id/btn_four"
+            style="@style/calculatorButton"
+            android:text="@string/four"/>
+        <Button
+            android:id="@+id/btn_five"
+            style="@style/calculatorButton"
+            android:text="@string/five"/>
+        <Button
+            android:id="@+id/btn_six"
+            style="@style/calculatorButton"
+            android:text="@string/six"/>
+        <Button
+            android:id="@+id/btn_minus"
+            style="@style/operatorButton"
+            android:text="@string/minus"/>
+
+        <!-- 第四行 -->
+        <Button
+            android:id="@+id/btn_one"
+            style="@style/calculatorButton"
+            android:text="@string/one"/>
+        <Button
+            android:id="@+id/btn_two"
+            style="@style/calculatorButton"
+            android:text="@string/two"/>
+        <Button
+            android:id="@+id/btn_three"
+            style="@style/calculatorButton"
+            android:text="@string/three"/>
+        <Button
+            android:id="@+id/btn_add"
+            style="@style/operatorButton"
+            android:text="@string/add"/>
+
+        <!-- 第五行 -->
+        <Button
+            android:id="@+id/btn_negative"
+            style="@style/calculatorButton"
+            android:text="@string/posiOrNegative"/>
+        <Button
+            android:id="@+id/btn_zero"
+            style="@style/calculatorButton"
+            android:text="@string/zero"/>
+        <Button
+            android:id="@+id/btn_point"
+            style="@style/calculatorButton"
+            android:text="@string/point"/>
+        <Button
+            android:id="@+id/btn_equal"
+            style="@style/equalButton"
+            android:text="@string/equal"/>
+    </GridLayout>
+</LinearLayout>
