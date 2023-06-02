@@ -15,10 +15,10 @@ import java.util.LinkedList;
 import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    private TextView resultTV;
-    private TextView calculateTV;
-    private Integer intPushNumber;
-    private Integer integerBit = 0;
+    private TextView resultTV;           // 显示结果的TextView
+    private TextView calculateTV;        // 显示计算过程的Textview
+    private Integer intPushNumber;       // int类型的PushNumber
+    private Integer integerBit = 0;      // 数值变量位数
     private Double pushNumber;
     private Double resultNumber;
     private String pushOperator;
@@ -29,13 +29,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private boolean whetherHaveDot = false;
     private boolean whetherHavePercent = false;
     LinkedList<Double> numberList = new LinkedList<>();
-    LinkedList<String> operatorList = new LinkedList<>();//
+    LinkedList<String> operatorList = new LinkedList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+//        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         //获取textView
         resultTV = findViewById(R.id.resultTV);
